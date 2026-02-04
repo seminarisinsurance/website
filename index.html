@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Seminaris Insurance | Home, Auto, Business, Life & Health Insurance</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BASE ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  color: #000;
+  line-height: 1.6;
+}
+
+a {
+  color: #0077aa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== CONTAINER ===== */
+#container {
+  width: 960px;
+  max-width: 95%;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+/* ===== HEADER ===== */
+#header {
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  height: 101px;
+}
+
+/* ===== HERO IMAGE ===== */
+#hero {
+  text-align: center;
+  padding: 10px 40px 30px;
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* ===== MAIN CONTENT ===== */
+#content {
+  padding: 40px;
+}
+
+.columns {
+  display: flex;
+  gap: 30px;
+}
+
+.column {
+  flex: 1;
+}
+
+.column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  padding-left: 20px;
+}
+
+.column ul li {
+  margin-bottom: 6px;
+}
+
+/* ===== IMAGE BELOW TEXT ===== */
+.column img {
+  margin-top: 15px;
+  width: 100%;
+  height: auto;
+}
+
+/* ===== FOOTER ===== */
+#footer {
+  border-top: 1px solid #ddd;
+  background: #f9f9f9;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+  }
+
+  #header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div id="container">
+
+  <!-- HEADER -->
+  <div id="header">
+    <img id="logo" src="logo.png" alt="Seminaris Insurance Logo">
+  </div>
+
+  <!-- HERO IMAGE -->
+  <div id="hero">
+    <img src="dianne_home.jpg" alt="Hero Image">
+  </div>
+
+  <!-- CONTENT -->
+  <div id="content">
+    <div class="columns">
+
+      <!-- COLUMN 1 -->
+      <div class="column">
+        <h3><strong>
+          We are an insurance agency dedicated to providing exceptional customer service
+          and guiding our clients in the right direction for all their insurance needs.
+        </strong></h3>
+
+        <img src="professionals.png" alt="Professional Team">
+      </div>
+
+      <!-- COLUMN 2 -->
+      <div class="column">
+        <h3><strong>
+          We are a property and casualty insurance agency offering:
+        </strong></h3>
+
+        <ul>
+          <li>Commercial Packages</li>
+          <li>General Liability</li>
+          <li>Property Insurance</li>
+          <li>Workers’ Compensation</li>
+          <li>Commercial Auto – Fleets of all sizes</li>
+          <li>Employment Practices Liability</li>
+          <li>Directors & Officers Liability</li>
+          <li>Professional Liability – All industries</li>
+          <li>Surety Bonds (Contract, License, Miscellaneous)</li>
+        </ul>
+      </div>
+
+      <!-- COLUMN 3 -->
+      <div class="column">
+        <h3><strong>Contact Us</strong></h3>
+
+        <p>
+          Seminaris Insurance<br>
+          3511 Camino del Rio Ste 400<br>
+          San Diego, CA 92108
+        </p>
+		<br>
+		<p>
+		Phone: (909) 599-8259
+		<br>
+		Ask for Dianne Seminaris
+		</p>
+		<br>
+        		<p>
+          Email us at<br>
+          <a href="mailto:Dianne@seminarisinsurance.com">
+            dianne@seminarisinsurance.com
+          </a>
+                  <p>
+          for inquiries and quotes<br>
+        </p>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer">
+    © <span id="year"></span> Seminaris Insurance. All rights reserved.
+  </div>
+
+</div>
+
+<script>
+/* ===== SIMPLE JS ===== */
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
